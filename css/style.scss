@@ -1,0 +1,95 @@
+
+/*body styles*/
+$myFont: Helvetica, sans-serif;
+$myColor: red !global;
+$myFontSize: 20px;
+$myWidth: 980px;
+$myBackgroundColor: darkorange;
+$ghostwhite: ghostwhite;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  background-color: $myBackgroundColor;
+}
+
+/*header styles*/
+$bg_header: magenta;
+$display: flex;
+$Jcenter: center;
+
+header {
+  background: $bg_header;
+  display: flex;
+  justify-content: $Jcenter;
+}
+
+header ul li {
+  float: left;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 4px;
+}
+
+header ul li a:hover {
+  list-style: none;
+  text-decoration: none;
+  background-color: brown;
+  color: $ghostwhite;
+  border-radius: 20px;
+}
+
+header ul li a{
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 4px;
+  background-color: dodgerblue;
+}
+
+$primaryBtn: rgb(182, 85, 153);
+
+.submit {
+  background-color: rgba(0, 0, 255, .8);
+  cursor: pointer;
+  &:hover {
+    background: $primaryBtn;
+    color: white;
+
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: dodgerblue;
+  align-items: stretch;
+  font: {
+    family: Helvetica;
+    size: 50px;
+    weigt: bold;
+  }
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  text: {
+  /*align: center;*/
+  transform: lowercase;
+  overflow: hidden;
+}
+}
+
+@mixin box-shadow {
+  box-shadow: 22px 22px 88px;
+}
+
+.shadow {
+  @include box-shadow;
+}
+
+

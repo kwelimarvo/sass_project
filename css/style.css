@@ -1,0 +1,72 @@
+/*body styles*/
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  color: red;
+  background-color: darkorange;
+}
+
+/*header styles*/
+header {
+  background: magenta;
+  display: flex;
+  justify-content: center;
+}
+
+header ul li {
+  float: left;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 4px;
+}
+
+header ul li a:hover {
+  list-style: none;
+  text-decoration: none;
+  background-color: brown;
+  color: ghostwhite;
+  border-radius: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 4px;
+  background-color: dodgerblue;
+}
+
+.submit {
+  background-color: rgba(0, 0, 255, 0.8);
+  cursor: pointer;
+}
+.submit:hover {
+  background: rgb(182, 85, 153);
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: dodgerblue;
+  align-items: stretch;
+  font-family: Helvetica;
+  font-size: 50px;
+  font-weigt: bold;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  /*align: center;*/
+  text-transform: lowercase;
+  text-overflow: hidden;
+}
+
+.shadow {
+  box-shadow: 22px 22px 88px;
+}
+
+/*# sourceMappingURL=style.css.map */
